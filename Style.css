@@ -32,3 +32,27 @@ body {
     overflow: hidden;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+* --- Button Grid --- */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* --- Individual Button Styles (Base) --- */
+.calc-button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.1s ease-in-out;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.calc-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
