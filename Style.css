@@ -56,3 +56,40 @@ body {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* Numbers and Decimal */
+.number-btn, .decimal-btn {
+    background-color: #3f3f5a;
+    color: #e0e0e0;
+}
+.number-btn:hover, .decimal-btn:hover {
+    background-color: #52527a;
+}
+
+/* Operators (+, -, *, /) */
+.operator-btn {
+    background-color: #ff9800; /* Orange */
+    color: #1a1a2e;
+}
+.operator-btn:hover {
+    background-color: #ffae42;
+}
+
+/* Clear (C) and Delete (DEL) */
+.clear-btn, .delete-btn {
+    background-color: #c70039; /* Red */
+    color: #ffffff;
+}
+.clear-btn:hover, .delete-btn:hover {
+    background-color: #e0245e;
+}
+
+/* Equals (=) button */
+.equals-btn {
+    background-color: #00bcd4; /* Cyan */
+    color: #1a1a2e;
+    grid-column: span 2; /* Make it span two columns */
+}
+.equals-btn:hover {
+    background-color: #4dd0e1;
+}
