@@ -20,3 +20,24 @@ const keys = document.getElementById('calculator-keys');
 function updateDisplay() {
     display.textContent = calculator.displayValue;
 }
+// Initial display update
+updateDisplay();
+
+// --- Core Logic Functions ---
+
+/**
+ * Handles input of digits (0-9).
+ * @param {string} digit - The number string to input.
+ */
+function inputDigit(digit) {
+    const { displayValue, waitingForSecondOperand } = calculator;
+
+    if (waitingForSecondOperand === true) {
+        // If waiting for second operand, start a fresh number
+        calculator.displayValue = digit;
+        calculator.waitingForSecondOperand = false;
+    } else {
+        // Append the digit, preventing multiple leading zeros
+        calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
+    }
+}
