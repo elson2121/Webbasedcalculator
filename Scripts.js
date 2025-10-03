@@ -58,3 +58,13 @@ function inputDecimal(dot) {
         calculator.displayValue += dot;
     }
 }
+
+/**
+ * Defines the arithmetic functions.
+ */
+const performCalculation = {
+    '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
+    '*': (firstOperand, secondOperand) => firstOperand * secondOperand,
+    '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
+    '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
+};
