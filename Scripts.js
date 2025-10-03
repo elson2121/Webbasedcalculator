@@ -41,3 +41,20 @@ function inputDigit(digit) {
         calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
     }
 }
+/**
+ * Handles the decimal point input.
+ * @param {string} dot - The decimal point string ('.').
+ */
+function inputDecimal(dot) {
+    // If we just finished a calculation, start the next number with "0."
+    if (calculator.waitingForSecondOperand === true) {
+        calculator.displayValue = '0.';
+        calculator.waitingForSecondOperand = false;
+        return;
+    }
+
+    // Only allow one decimal point per number
+    if (!calculator.displayValue.includes(dot)) {
+        calculator.displayValue += dot;
+    }
+}
