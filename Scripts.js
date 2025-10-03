@@ -9,3 +9,14 @@ const calculator = {
     // Stores the operator (+, -, *, /)
     operator: null,
 };
+
+// --- DOM Elements ---
+const display = document.getElementById('display');
+const keys = document.getElementById('calculator-keys');
+
+/**
+ * Updates the calculator display element with the current displayValue.
+ */
+function updateDisplay() {
+    display.textContent = calculator.displayValue;
+}
