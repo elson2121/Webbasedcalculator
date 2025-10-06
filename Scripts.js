@@ -88,4 +88,8 @@ function handleOperator(nextOperator) {
         calculator.displayValue = `${parseFloat(result.toFixed(7))}`;
         calculator.firstOperand = result;
     }
+      // Set the state for the next number and operator
+    calculator.waitingForSecondOperand = true;
+    calculator.operator = nextOperator;
+
 }
