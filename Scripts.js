@@ -68,3 +68,14 @@ const performCalculation = {
     '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
     '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
 };
+function handleOperator(nextOperator) {
+    const inputValue = parseFloat(calculator.displayValue);
+
+    // If there's an existing operator and we are waiting for the second operand,
+    // the user is likely changing the operator, so we update it and return.
+    if (calculator.operator && calculator.waitingForSecondOperand) {
+        calculator.operator = nextOperator;
+        return;
+    } 
+    
+}
