@@ -77,5 +77,15 @@ function handleOperator(nextOperator) {
         calculator.operator = nextOperator;
         return;
     } 
-    
+     // Store the current display value as the first operand if it hasn't been set
+    if (calculator.firstOperand === null && !isNaN(inputValue)) {
+        calculator.firstOperand = inputValue;
+    } else if (calculator.operator) {
+        // If an operator exists, perform the calculation
+        const result = performCalculation[calculator.operator](calculator.firstOperand, inputValue);
+
+        // Display the result, ensuring a clean output (avoiding excessive floating point errors)
+        calculator.displayValue = `${parseFloat(result.toFixed(7))}`;
+        calculator.firstOperand = result;
+    }
 }
