@@ -109,3 +109,37 @@ function deleteDigit() {
     // Remove the last character, if the result is an empty string, set it back to '0'
     calculator.displayValue = displayValue.slice(0, -1) || '0';
 }
+/ --- Event Listener Setup ---
+
+// Use event delegation on the calculator grid
+keys.addEventListener('click', (event) => {
+    // Ensure the click target is a button
+    if (!event.target.matches('button')) {
+        return;
+    }
+
+    const target = event.target;
+    const number = target.dataset.number;
+    const action = target.dataset.action;
+ if (number) {
+        inputDigit(number);
+    } else if (action === '.') {
+        inputDecimal(action);
+    } else if (action === 'clear') {
+        resetCalculator();
+    } else if (action === 'delete') {
+        deleteDigit();
+    } else if (action === '=') {
+        // Handle '=' separately to perform final calculation and clear operator
+        if (calculator.operator) {
+            handleOperator('=');
+        }
+        calculator.operator = null;
+    } else if (action) {
+        // Must be an arithmetic operator (+, -, *, /)
+        handleOperator(action);
+    }
+
+    // Update the UI after every interaction
+    updateDisplay();
+});
