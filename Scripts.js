@@ -93,3 +93,13 @@ function handleOperator(nextOperator) {
     calculator.operator = nextOperator;
 
 }
+
+/**
+ * Resets the calculator state to its initial values.
+ */
+function resetCalculator() {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+}
