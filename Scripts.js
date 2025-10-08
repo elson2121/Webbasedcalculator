@@ -109,7 +109,7 @@ function deleteDigit() {
     // Remove the last character, if the result is an empty string, set it back to '0'
     calculator.displayValue = displayValue.slice(0, -1) || '0';
 }
-/ --- Event Listener Setup ---
+ 
 
 // Use event delegation on the calculator grid
 keys.addEventListener('click', (event) => {
