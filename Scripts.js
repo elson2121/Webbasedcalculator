@@ -103,3 +103,9 @@ function resetCalculator() {
     calculator.waitingForSecondOperand = false;
     calculator.operator = null;
 }
+//deletion function
+function deleteDigit() {
+    const displayValue = calculator.displayValue;
+    // Remove the last character, if the result is an empty string, set it back to '0'
+    calculator.displayValue = displayValue.slice(0, -1) || '0';
+}
