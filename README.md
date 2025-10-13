@@ -14,4 +14,10 @@ HTML5: For the structure and layout of the calculator interface.
 
 CSS3: For styling, colors, and layout arrangement.
 
-JavaScript (Vanilla): For all the core calculation logic and handling user input.
+JavaScript (Vanilla): For all the core calculation logic and handling user input. 📂 Project Structure
+The project consists of three main files:
+
+/simple-calculator
+├── index.html       // The main structure of the calculator UI
+├── style.css        // All CSS rules for styling and layout
+└── script.js        // The logic for handling button clicks and calculations
