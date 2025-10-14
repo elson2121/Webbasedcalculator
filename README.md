@@ -40,3 +40,5 @@ Add keyboard support for number input.
 Implement advanced functions (e.g., square root, powers, percentage).
 
 Include history logging for previous calculations.
+🧑‍💻 Author
+Samuel Diriba - github.com/elson2121  
