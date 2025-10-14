@@ -21,3 +21,16 @@ The project consists of three main files:
 ├── index.html       // The main structure of the calculator UI
 ├── style.css        // All CSS rules for styling and layout
 └── script.js        // The logic for handling button clicks and calculations
+💻 How to Run Locally
+You do not need any special tools or servers to run this simple web application.
+
+Clone the Repository:
+
+git clone [Your Repository URL Here]
+cd simple-calculator
+
+Open the File:
+Locate the index.html file in the project folder and double-click it.
+
+Use the Calculator:
+The calculator will open directly in your default web browser, and you can begin using it immediately.
