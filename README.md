@@ -34,3 +34,9 @@ Locate the index.html file in the project folder and double-click it.
 
 Use the Calculator:
 The calculator will open directly in your default web browser, and you can begin using it immediately.
+🔮 Future Enhancements
+Add keyboard support for number input.
+
+Implement advanced functions (e.g., square root, powers, percentage).
+
+Include history logging for previous calculations.
