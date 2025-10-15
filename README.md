@@ -8,7 +8,7 @@ Clear Functionality: Dedicated button to clear the display (C).
 
 Responsive Design: Optimized for use on both desktop and mobile screens (if responsive CSS was applied).
 
-Technology Stack: Built purely with front-end technologies: HTML, CSS, and JavaScript.
+Technology Stack: Built purely with front-end technologies: HTML, CSS, and JavaScript...
 🛠️ Technology Stack
 HTML5: For the structure and layout of the calculator interface.
 
