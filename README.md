@@ -12,7 +12,7 @@ Technology Stack: Built purely with front-end technologies: HTML, CSS, and JavaS
 🛠️ Technology Stack
 HTML5: For the structure and layout of the calculator interface.
 
-CSS3: For styling, colors, and layout arrangement.
+CSS3: For styling, colors, and layout arrangement..
 
 JavaScript (Vanilla): For all the core calculation logic and handling user input. 📂 Project Structure
 The project consists of three main files:
