@@ -6,7 +6,7 @@ Basic Arithmetic: Supports addition (+), subtraction (-), multiplication (*), an
 
 Clear Functionality: Dedicated button to clear the display (C).
 
-Responsive Design: Optimized for use on both desktop and mobile screens (if responsive CSS was applied).
+Responsive Design: Optimized for use on both desktop and mobile screens (if responsive CSS was applied)..
 
 Technology Stack: Built purely with front-end technologies: HTML, CSS, and JavaScript...
 🛠️ Technology Stack
